@@ -93,3 +93,15 @@ If the calories locator changes, I would update `${MAX CALORIES}` in `robot/reso
 ### 7. Why Cypress keeps QP-01 in one test
 
 Cypress clears cookies before each test, and QuickPizza uses a cookie to keep a browser connected to the same server. QP-01 creates the pizza on the customer page and then checks that pizza on the admin page, so both parts must run in the same test and browser session. If steps 6 and 7 were a second test, Cypress would clear the cookie before it began and the admin page could connect to a different server. The new pizza might then be missing from that server's admin list, causing a false failure.
+
+## Manual QP-01 verification (completed)
+
+The manual browser check was completed by the student in Chrome on 10 November 2026. The submitted screenshots show the customer page and the signed-in admin page.
+
+- Opened QuickPizza and enabled Advanced.
+- Entered Max Calories per Slice = **600**, excluded **Knife**, selected **Must be vegetarian**, and entered the unique pizza name **Lab Pizza MAN**.
+- Clicked **Pizza, Please!**. The recommendation showed **Lab Pizza MAN**, tool **Pizza cutter** (not Knife), and **450 calories per slice** (at most 600).
+- Clicked **Love it!** while not signed in. The page displayed **Please log in first.**, as expected.
+- Opened `/admin`, signed in with the lab admin account, and verified the admin list contained **Lab Pizza MAN (tool=Pizza cutter, ingredients_number=7)**. This matches the tool shown in the customer recommendation.
+
+**Manual QP-01 result: PASS.** The manual customer-flow, unauthenticated-rating check, and admin-list consistency check were all visibly confirmed in the screenshots supplied on 10 November 2026. This closes the previously outstanding manual Step 0.5 check.
