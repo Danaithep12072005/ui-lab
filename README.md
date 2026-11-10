@@ -1,4 +1,4 @@
-﻿# W11 UI Lab — Automated UI Testing
+# W11 UI Lab — Automated UI Testing
 
 Individual lab for ITDS362 Software Quality Assurance and Testing.
 
@@ -18,7 +18,7 @@ The work follows `W11-UI_Lab_Exercise_v2.pdf`. Part 0, Section 2, Section 4 and 
 - Python 3.10+
 - Node.js 22, 24 or 26
 - Git
-- For Robot Framework, a ChromeDriver matching the installed Chrome version, with `CHROMEDRIVER` set to its full path.
+- For Robot Framework, a ChromeDriver matching the installed Chrome version, stored outside the repository, with `CHROMEDRIVER` set to its full path. On Windows PowerShell, for example: ` $env:CHROMEDRIVER="D:\drivers\chromedriver-win64\chromedriver.exe" `.
 
 ## Run Robot Framework
 ```powershell
