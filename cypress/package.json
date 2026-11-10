@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "w11-ui-lab-cypress",
   "version": "1.0.0",
   "private": true,
@@ -9,6 +9,7 @@
     "open": "cypress open"
   },
   "devDependencies": {
-    "cypress": "^15.7.0"
+    "cypress": "^16.2.1"
   }
 }
+
