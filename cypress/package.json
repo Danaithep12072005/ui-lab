@@ -1,0 +1,14 @@
+﻿{
+  "name": "w11-ui-lab-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ITDS362 W11 UI Lab - Cypress end-to-end tests",
+  "scripts": {
+    "test": "cypress run --browser chrome",
+    "test:headed": "cypress run --browser chrome --headed",
+    "open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^15.7.0"
+  }
+}
